@@ -93,9 +93,10 @@ def index():
 - 选择和判断用的ajax方式
 
 **一个缺陷**  单选题过渡到判断题时 页面重写不干净，出现['\u56e0', '\u4e3a', '\u6240', '\u4ee5']这样的js代码漏到页面上的问题
-> 比如
 ![Alt text](./2015-12-22.png)
-> 原因大概是ajax返回内容以document.write方式写到页面的奇怪副作用，无力解决，太邪门了。
+
+
+原因大概是ajax返回内容以document.write方式写到页面的奇怪副作用，无力解决，太邪门了。
 
 **bootstrap自适应**，可以自动据终端屏幕大小调整页面，但结分页的分数栏用了自适应就消失了，所以结分页这句
 `<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>`
