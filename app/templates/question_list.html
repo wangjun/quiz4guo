@@ -1,0 +1,32 @@
+{% extends "user_base.html" %}
+{% block title %}OnlineQiu-Dashboard{% endblock %}
+{% block content %}
+	<main role="main">
+		<div class="custom-container">
+			<div style="min-height:50px;" class="hidden-xs"></div>
+			<div style="padding:0 50px 0;">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h2 class="text-center">{{question_kind}}</h2>
+					</div>
+				</div>
+				<table class="table tabel-striped table-bordered">
+					<thead>
+						<tr>
+							<th>题目</th>
+							<th>得分</th>
+						</tr>
+					</thead>
+					<tbody>	
+						{%for question in questions%}
+							<tr>
+								<td><a href="#">{{question[0]}}</a></td>
+								<td>{{question[1]}}</td>
+							</tr>	
+						{%endfor%}		
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</main>
+{% endblock %}

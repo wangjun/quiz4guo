@@ -1,0 +1,74 @@
+{% extends "bootstrap/base.html" %}
+
+{% block html_attribs %} lang="zh-CN"{% endblock %}
+
+{% block title %}OnlineQiu-Dashboard{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet"
+      href="{{url_for('.static', filename='custom.css')}}">
+{% endblock %}
+{% block navbar %}
+	<nav role="navigation" class="navbar navbar-inverse">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" >
+				<span class="icon-bar" ></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="user_dash" class="navbar-brand">OnlineQiu</a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				{%if kind == 1%}
+				<li class='active'>
+				{%else%}
+				<li>
+				{%endif%}
+					<a href="/question/1">
+						<span class="glyphicon glyphicon-th-large"></span>
+						题目1
+					</a>
+				</li>
+				{%if kind == 2%}
+				<li class='active'>
+				{%else%}
+				<li>
+				{%endif%}
+					<a href="/question/2">
+						<span class="glyphicon glyphicon-th-large"></span>
+						题目2
+					</a>
+				</li>
+				{%if kind == 3%}
+				<li class='active'>
+				{%else%}
+				<li>
+				{%endif%}
+					<a href="/question/3">
+						<span class="glyphicon glyphicon-th-large"></span>
+						题目3
+					</a>
+				</li>
+				{%if kind == 4%}
+				<li class='active'>
+				{%else%}
+				<li>
+				{%endif%}
+					<a href="/question/4">
+						<span class="glyphicon glyphicon-th-large"></span>
+						题目4
+					</a>
+				</li>
+
+				<li style="text-align:right">
+					<a href="#">
+						<span class="glyphicon glyphicon-cog"></span>
+						账户设置
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+{% endblock %}

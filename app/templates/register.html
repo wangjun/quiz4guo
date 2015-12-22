@@ -1,0 +1,84 @@
+{% extends "bootstrap/base.html" %}
+
+{% block html_attribs %} lang="zh-CN"{% endblock %}
+
+{% block title %}OnlineQiu-register{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet"
+      href="{{url_for('.static', filename='custom.css')}}">
+{% endblock %}
+{% block navbar %}
+	<nav role="navigation" class="navbar navbar-inverse">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" >
+				<span class="icon-bar" ></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand">OnlineQiu</a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li>
+					<a href="login">
+						<span class="glyphicon glyphicon-home"></span>
+						登陆
+					</a>
+				</li>
+				<li class="active">
+					<a href="register">
+						<span class="glyphicon glyphicon-plus"></span>
+						注册
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+{% endblock %}
+
+{% block content %}
+	<main role="main">
+		<div class="custom-container">
+			<div style="min-height:100px;" class="hidden-xs"></div>
+			<div class="col-md-offset-3">
+				<div class="custom-panel">
+					<div class="text-center">
+						<h1>Register</h1>
+					</div>
+					<form class="bs-example bs-example-form" role="form" method="post">
+						<div style="padding:12px 0 12px;">
+							<div class="input-group">
+								<span class="input-group-addon">
+									<span class="glyphicon glyphicon-user"></span>
+								</span>
+								<input type="text" class="form-control" placeholder="username" name="username"></input>
+							</div>
+						</div>
+						<div style="padding:12px 0 12px;">
+							<div class="input-group">
+								<span class="input-group-addon">
+									<span class="glyphicon glyphicon-star-empty"></span>
+								</span>
+								<input type="password" class="form-control" placeholder="password" name="password"></input>
+							</div>
+						</div>
+						<div style="padding:12px 0 12px;">
+							<div class="input-group">
+								<span class="input-group-addon">
+									<span class="glyphicon glyphicon-star"></span>
+								</span>
+								<input type="password" class="form-control" placeholder="repeat password" name="password-repeat"></input>
+							</div>
+						</div>
+						<p class="text-danger">{{error}}</p>
+						<div style="padding:20px 0 10px;">
+							<button type="submit" class="btn btn-success btn-lg btn-block">确认</button>
+						</div>
+					</form>
+				</div>		
+			</div>
+		</div>
+	</main>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "user_base.html" %}
+{% block title %}OnlineQiu-Dashboard{% endblock %}
+{% block content %}
+	<main role="main">
+		<div class="custom-container">
+			<div style="min-height:50px;" class="hidden-xs"></div>
+			<div style="padding:0 50px 0;">
+				<table class="table tabel-striped table-bordered">
+					<caption><h1>排名</h1></caption>
+					<thead>
+						<tr>
+							<th>名次</th>
+							<th>用户名</th>
+							<th>得分</th>
+						</tr>
+					</thead>
+					<tbody>	
+						{%for user in users%}
+							<tr>
+								<td>{{loop.index}}</td>
+								<td>{{user[0]}}</td>
+								<td>{{user[1]}}</td>
+							</tr>	
+						{%endfor%}		
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</main>
+{% endblock %}

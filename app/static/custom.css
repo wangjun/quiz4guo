@@ -1,0 +1,25 @@
+.custom-container{
+	background-image: url(./000.jpg);
+	display: block;
+	background-position: initial initial;
+	background-repeat: initial initial;
+	min-height: 700px;
+
+}
+.custom-panel{
+	background-color: #ffffff;
+	border: 12px solid #ffffff;
+	-webkit-border-radius:15px;
+	-moz-border-radius:15px;
+	border-radius:15px;
+	max-width: 600px;
+	padding: 25px 100px 10px;
+}
+.question-panel{
+	background-color: #ffffff;
+	border: 16px solid #ffffff;
+	-webkit-border-radius:15px;
+	-moz-border-radius:15px;
+	border-radius:15px;
+	padding: 10px 10px 10px
+}

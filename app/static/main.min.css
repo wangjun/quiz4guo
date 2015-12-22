@@ -1,0 +1,106 @@
+#mart-rewards .nav .btn.publish,#mart-rewards .nav button.publish{color:#fff;background:#6d89a5;border:1px solid #6d89a5;line-height:normal;margin-left:2px}
+#mart-rewards .nav .buttons .btn.info,#mart-rewards .nav .buttons button.info{color:#6d89a5;background:0 0;border:1px solid #6d89a5;border-top-right-radius:0;border-bottom-right-radius:0}
+#mart-rewards .banner{padding-top:90px;padding-bottom:64px;background-color:#252d33;position:relative}
+#mart-rewards .banner::after{pointer-events:none;content:"";position:absolute;top:0;left:0;bottom:0;right:0;z-index:1;opacity:.2}
+#mart-rewards .banner .banner-container{margin:0 auto;max-width:980px;position:relative;z-index:2}
+#mart-rewards .banner .banner-container .banner-major-title{color:#FEFEFE;font-size:60px;text-align:center;font-weight:500;letter-spacing:2px;text-shadow:0 2px 2px rgba(0,0,0,.2)}
+#mart-rewards .banner .banner-container .banner-minor-title{color:#C7C7C7;font-size:24px;text-align:center}
+#mart-rewards .banner .banner-container .banner-desc{text-align:center;color:#fff;font-size:13px;line-height:24px}
+#mart-rewards .banner .banner-container .about-container{margin:40px auto 20px;text-align:center}
+#mart-rewards .banner .banner-container .about-container .about-btn{padding:9px 27px;background:#61c279;border-radius:30px;font-size:15px;color:#fff;letter-spacing:1px}
+#mart-rewards .banner .banner-container .banner-bottom{height:160px;margin-top:40px}
+#mart-rewards .banner .banner-container .banner-bottom .bottom-left{height:100%;width:calc(100% - 280px);min-width:450px;padding:20px 85px;box-sizing:border-box;border-radius:6px;background-color:rgba(41,41,41,.8);display:inline-block;margin-right:20px}
+#mart-rewards .banner .banner-container .banner-bottom .bottom-left p{font-size:30px;color:#b9b9b9;text-align:right}
+#mart-rewards .banner .banner-container .banner-bottom .bottom-left .count-finished-desc{display:inline-block;float:left;line-height:48px}
+#mart-rewards .banner .banner-container .banner-bottom .bottom-left .count-finished-money{font-size:14px;line-height:30px;text-align:right}
+#mart-rewards .banner .banner-container .banner-bottom .bottom-left .count-finished-money>span{color:#61c279}
+#mart-rewards .banner .banner-container .banner-bottom .bottom-left .count-finished{display:inline-block;line-height:120px;float:right}
+#mart-rewards .banner .banner-container .banner-bottom .bottom-left .count-finished .count-finished-number{text-align:center;font-size:100px;color:#fff;display:inline-block;height:120px;width:80px;background-color:#61c279;border-radius:6px;box-sizing:border-box}
+#mart-rewards .banner .banner-container .banner-bottom .bottom-right{float:right;height:100%;width:260px;box-sizing:border-box;display:inline-block}
+#mart-rewards .banner .banner-container .banner-bottom .bottom-right .publish{border-radius:6px;background-color:rgba(100,194,121,.8);height:72px;padding:22px 15px;box-sizing:border-box}
+#mart-rewards .banner .banner-container .banner-bottom .bottom-right .fullfill{margin-top:16px;border-radius:6px;background-color:rgba(199,199,199,.8);height:72px;padding:22px 15px;box-sizing:border-box}
+#mart-rewards .banner .banner-container .banner-bottom .bottom-right .nav-btn{padding:6px 27px;background:#474b48;border-radius:20px;font-size:13px;color:#fff;margin-left:10px}
+#mart-rewards .banner .banner-container .banner-bottom .bottom-right .banner-label{color:#fff}
+#mart-rewards .content{max-width:980px;margin:0 auto;padding:1em}
+#mart-rewards .items{padding:30px 0}
+#mart-rewards .items .empty-result{padding:1.5em 0;font-size:12px;color:#666;text-align:center;line-height:1.5}
+#mart-rewards .item{display:inline-block;float:left}
+#mart-rewards .item:hover .item-content{box-shadow:0 1px 5px rgba(0,0,0,.5)}
+#mart-rewards .item .item-content{box-shadow:0 1px 3px rgba(0,0,0,.3);margin-bottom:20px;background:#fff;position:relative;border-radius:4px}
+#mart-rewards .item .item-content .uuid{position:absolute;left:10px;top:10px;padding:3px 5px;background:rgba(91,91,91,.6);color:#fff;font-size:12px;border-radius:2px;font-weight:700}
+#mart-rewards .item figure{max-height:220px;overflow:hidden;position:relative}
+#mart-rewards .item figure .description,#mart-rewards .item figure div.cover{position:absolute;left:0;height:100%;border-top-left-radius:4px;border-top-right-radius:4px;width:100%}
+#mart-rewards .item figure img{width:100%;display:block}
+#mart-rewards .item figure div.cover{top:0;overflow:hidden}
+#mart-rewards .item figure:hover .description{display:block}
+#mart-rewards .item figure .description{font-size:14px;color:#fff;bottom:0;background:-webkit-linear-gradient(top,rgba(0,0,0,.9),rgba(0,0,0,.5));padding:2.5em 1em 1em;box-sizing:border-box;display:none}
+#mart-rewards .item figure .description div{overflow:hidden;text-overflow:ellipsis;padding:0 .8em;white-space:normal!important;line-height:2;text-align:center}
+#mart-rewards .item .detail .title{height:30px;padding:5px 10px}
+#mart-rewards .item .detail .title a{color:#474b48;font-size:13px;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#mart-rewards .item .detail .coders{height:40px;margin:0 10px;box-sizing:border-box;border-top:1px solid #ededed}
+#mart-rewards .item .detail .type{height:36px;line-height:36px;border-top:1px solid #E7E7E7;font-size:14px;margin-bottom:10px;background-color:#F7FAF8;padding:0 10px;box-sizing:border-box;box-shadow:0 1px 0 0 #fff inset;border-bottom-left-radius:4px;border-bottom-right-radius:4px}
+#mart-rewards .item .detail .type .type-block{display:inline-block;line-height:20px}
+#mart-rewards .item .detail .type .type-icon{display:inline-block;float:left}
+#mart-rewards .item .detail .type .time{font-size:13px;color:#000;text-align:right;float:right;border-left:1px solid #E7E7E7;padding:0 10px;margin-top:1px;height:34px}
+#mart-rewards .item .detail .type .time b{font-style:normal;color:#f75288}
+#mart-rewards .item .detail .type img{vertical-align:middle}
+#mart-rewards .item .detail .type .icon label{padding-left:4px}
+#mart-rewards .item .detail .price{font-family:arial;line-height:1.2;display:table;width:100%;padding:0 10px;box-sizing:border-box;margin-bottom:6px;height:40px}
+#mart-rewards .item .detail .price .tabc{display:table-cell;vertical-align:middle;color:#474B48;font-size:22px}
+#mart-rewards .item .detail .price .tabc .grey{color:#c7c7c7}
+#mart-rewards .item .detail .winner{vertical-align:middle;border-radius:2px;font-size:12px;line-height:30px;color:#c7c7c7}
+#mart-rewards .item .detail .winner a{color:#2d59a2}
+#mart-rewards .item .detail button{border:none;font-size:12px;height:24px;line-height:12px;border-radius:3px;cursor:pointer;display:inline-block}
+#mart-rewards .item .detail button:hover{transition:opacity .5s ease-in;opacity:.8}
+#mart-rewards .item .detail button a{color:#fff}
+#mart-rewards .nav{background-color:#fff;height:80px;border:1px solid #E6E6E6;box-shadow:0 -1px 4px 0 rgba(0,0,0,.2)}
+#mart-rewards .nav .nav-zone{margin:0 auto;height:100%;width:100%;text-align:center;padding:28px;box-sizing:border-box}
+#mart-rewards .nav .nav-zone .typer{position:relative;display:inline-block;box-sizing:border-box;padding-right:20px}
+#mart-rewards .nav .nav-zone .typer .selection{color:#848484;cursor:pointer;padding:0 15px;position:relative}
+#mart-rewards .nav .nav-zone .typer .selection:after{content:'';position:absolute;top:2px;right:-5px;width:17px;height:17px;background-repeat:no-repeat;background-position:-172px -6px}
+#mart-rewards .nav .nav-zone .typer ul{position:absolute;padding:5px;background:#fff;border-right:1px solid #f7f9fa;border-left:1px solid #f7f9fa;border-top:2px solid #6d89a5;border-bottom:2px solid #6d89a5;right:0;text-align:center;z-index:999}
+#mart-rewards .nav .nav-zone .typer li.active,#mart-rewards .nav .nav-zone .typer li:hover{background:#6d89a5;color:#fff}
+#mart-rewards .nav .nav-zone .typer li{padding:0 1em;height:28px;cursor:pointer;line-height:28px}
+#mart-rewards .nav .nav-zone .typer li:hover a{color:#fff}
+#mart-rewards .nav .nav-zone .typer li.active a{color:#fff}
+#mart-rewards .nav .nav-zone .typer li a{color:#304354;font-size:12px;height:inherit;white-space:nowrap}
+#mart-rewards .nav .buttons{padding-left:0;padding-right:0}
+#mart-rewards .nav .btn:hover,#mart-rewards .nav button:hover{background:#456e96}
+#pager{text-align:center}
+#pager.reward-pager{border-radius:0;margin-bottom:3em;text-align:center;display:inline-block;width:100%;font-size:12px}
+#pager.reward-pager .pagination{border-radius:0}
+@media only screen and (max-width:1200px){#mart-rewards .content{max-width:980px;padding:2em}
+}
+@media only screen and (max-width:800px){#mart-rewards .content{padding:2em}
+}
+@media only screen and (max-width:500px){#mart-rewards .content{padding:.2em}
+#mart-rewards .items{padding:15px 0}
+}
+@media only screen and (min-width:1001px){#mart-rewards .item{width:32%;margin-right:2%}
+#mart-rewards .item:nth-of-type(3n+0){margin-right:0}
+}
+@media only screen and (min-width:769px) and (max-width:1000px){#mart-rewards .item{width:48%;margin-right:4%}
+#mart-rewards .banner-bottom .bottom-left,#mart-rewards .banner-bottom .bottom-right{display:block!important;width:100%!important}
+#mart-rewards .item:nth-of-type(2n+0){margin-right:0}
+#mart-rewards .banner-bottom{display:block!important}
+#mart-rewards .banner-bottom .bottom-right{text-align:center}
+#mart-rewards .banner-bottom .bottom-right .fullfill,#mart-rewards .banner-bottom .bottom-right .publish{display:inline-block!important}
+}
+@media only screen and (max-width:768px){#mart-rewards .item{width:100%}
+#mart-rewards .item .content{margin-bottom:3em;border-bottom:3px solid #e1e3e5}
+#mart-rewards .item figure{max-height:inherit}
+#mart-rewards .item figure .description{position:relative;background:#fff;width:100%;color:#333;padding:1em 0;border-bottom:1px solid rgba(221,221,221,.48);margin-bottom:0}
+#mart-rewards.nav .buttons{width:100%;text-align:right;border-bottom:1px solid #e5e4e1}
+#mart-rewards.nav nav{margin:15px 0;height:inherit}
+#mart-rewards.nav nav a{font-size:14px}
+#mart-rewards.nav nav li{padding:0 .4em!important}
+#mart-rewards.nav .btn,#mart-rewards.nav button{font-size:14px;padding:6px 10px}
+#mart-rewards.typer ul{left:0;right:inherit}
+#mart-rewards .banner-desc{display:none}
+#mart-rewards .bottom-left{display:none!important}
+#mart-rewards .bottom-right{display:block!important;width:100%!important;text-align:center}
+#mart-rewards .bottom-right .fullfill,#mart-rewards .bottom-right .publish{display:inline-block!important}
+#mart-rewards .nav-zone{padding:28px 14px!important}
+#mart-rewards .banner .banner-container .banner-major-title{font-size:26px}
+#mart-rewards .banner .banner-container .banner-minor-title{font-size:20px}
+}

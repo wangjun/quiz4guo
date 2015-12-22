@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+/>
+<link href="static/googleg_lodp.ico" rel="shortcut icon">
+    <head>
+        <title>
+            添加题目
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link href="static/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/static/custom.css">
+        <link rel="stylesheet" href="/static/css/custom.css">
+    </head>
+
+    <body>
+        <ul class="nav masthead-nav">
+            <li class="active">
+                <a href="/addqc">
+                    +选择题
+                </a>
+            </li>
+            <li>
+                <a href="/addqt">
+                    +判断题
+                </a>
+            </li>
+            <li>
+                <a href="/addqtk">
+                    +填空题
+                </a>
+            </li>
+            <li>
+        </ul>
+        <main role="main">
+            <div class="custom-container">
+                <div style="min-height:50px;" class="hidden-xs">
+                </div>
+                <div style="padding:0 50px 0;">
+                    <div class='question-panel'>
+                        <p>
+                            {{question_content}}
+                        </p>
+                        <div style="min-height:50px">
+                        </div>
+                        {%if success %}
+                        <p class="text-success">
+                            已提交
+                        </p>
+                        {%endif%}
+                        <form class="bs-example bs-example-form" role="form" method="post">
+                            <h1 class="cover-heading shadow centered">
+                                添加 选择题
+                            </h1>
+                            <br>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="题目" name="title"
+                                style="max-width:300px;">
+                                </input>
+                                <input type="text" class="form-control" placeholder="分值" name="score"
+                                style="max-width:300px;">
+                                </input>
+                                <br>
+                                <br>
+                                <br>
+                                <div>
+                                    <input type="text" class="form-control" placeholder="A" name="A" style="max-width:300px;">
+                                    </input>
+                                    <input type="text" class="form-control" placeholder="B" name="B" style="max-width:300px;">
+                                    </input>
+                                    <input type="text" class="form-control" placeholder="C" name="C" style="max-width:300px;">
+                                    </input>
+                                    <input type="text" class="form-control" placeholder="D" name="D" style="max-width:300px;">
+                                    </input>
+                                </div>
+                            </div>
+                            <div class="input-group" style="padding:15px 0 15px;">
+                                <input type="text" class="form-control" placeholder="答案（请填大写的ABCD）"
+                                name="answer" style="max-width:300px;">
+                                </input>
+                            </div>
+                            <div style="padding:20px 0 10px;">
+                                <button type="submit" class="btn btn-success btn-lg btn-block" style="max-width:200px;">
+                                    提交
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="static/js/jquery.min.js">
+        </script>
+        <script src="static/js/bootstrap.min.js">
+        </script>
+    </body>
+
+</html>

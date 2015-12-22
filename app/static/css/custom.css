@@ -1,0 +1,248 @@
+a,
+a:focus,
+a:hover {
+  color: #999;
+  text-shadow: none;
+}
+
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+html, .cover {
+  height: 100%;
+}
+
+body {
+  color: #333;
+  background-color: #FFF;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body.cover{
+  overflow-y: hidden;
+}
+.shadow{
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.inner {
+  padding: 10px;
+}
+
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-shadow: none;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  color: #555; /* IE8 proofing */
+  color: rgba(100,100,100,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: rgba(100,100,100,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #555;
+  border-bottom-color: #999;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(100,100,100,.25);
+  text-shadow: none;
+  text-align: center;
+}
+.centered{
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .cover .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .cover .mastfoot {
+    position: fixed;
+    bottom: 0;
+    text-shadow: none;
+  }
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
+
+#forkme_banner {
+  display: block;
+  position: absolute;
+  top:0;
+  right: 10px;
+  z-index: 10;
+  padding: 10px 50px 10px 10px;
+  color: #fff;
+  background: url('../images/blacktocat.png') #868686 no-repeat 95% 50%;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+a.notice{
+  display: block;
+  position: absolute;
+  top:0;
+  left: 10px;
+  z-index: 10;
+  padding: 10px;
+  color: #666;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background-color: #EEE;
+}
+.container{
+  text-align: left;
+  margin-top: 90px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-shadow: none;
+}
+.tutorial .container{
+  max-width: 700px;
+}
+.tutorial a{
+  color: #428bca !important;
+}
+.tutorial pre code{
+  font-size: 11px;
+}
+.doc-entry{
+  clear: both;
+  border-bottom: 1px dotted #DDD;
+  padding: 5px 0;
+}
+
+.entry-title {
+  font-size: 18px;
+}
+
+.entry-version {
+  float: right;
+  width: 80px;
+}
+
+.entry-default {
+  float: right;
+  width: 80px;
+}
+
+.entry-type {
+  float: right;
+  width: 80px;
+}
+
+.entry-credits {
+  float: right;
+  width: 120px;
+}
+
+.bs-callout {
+  margin: 2px 0 10px 10px;
+  padding: 10px 10px 10px 10px;
+  border-left: 5px solid #eee;
+}
+.bs-callout h4 {
+  margin-top: 0;
+}
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+
+.bs-callout-danger {
+  background-color: #fff;
+  border-color: #DA8383;
+}
+
+
+.custom, .custom input {
+  color: blue;
+  background: #ECEEFF !important;
+  border-radius: 0 !important;
+}
+
+img.i {
+  position: relative;
+  top: -2px;
+  margin-right: 3px;
+}
+.licence-text{
+  font-size: 12px;
+}
+.doc h1 span{
+  font-size: 12px;
+  color: #aaa;
+  font-weight: normal;
+}

@@ -1,0 +1,48 @@
+{% extends "user_base.html" %}
+{% block title %}OnlineQiu-Dashboard{% endblock %}
+{% block content %}
+	<main role="main">
+		<div class="custom-container">
+			<div style="min-height:50px;" class="hidden-xs"></div>
+			<div style="padding:0 50px 0;">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h2 class="text-center">{{question_title}}</h2>
+					</div>
+				</div>
+				<div class='question-panel'>
+					<p>{{question_content}}</p>
+					<div style="min-height:50px"></div>
+					{%if error %}
+					<p class="text-danger">答案不正确</p>
+					{%endif%}
+					{%if success %}
+					<p class="text-success">答案正确，已提交</p>
+					{%endif%}
+					{%if loginError %}
+					<p class="text-danger">用户名或密码不正确</p>
+					{%endif%}
+					<form class="bs-example bs-example-form" role="form" method="post">
+						<div class="input-group">
+							<span class="input-group-addon">
+								<span class="glyphicon glyphicon-check"></span>
+							</span>
+							<input type="text" class="form-control" placeholder="answer" name="answer" style="max-width:300px;"></input>
+						</div>
+						<div class="input-group" style="padding:15px 0 15px;">
+							<div style="padding:15px 0 15px;">
+								<input type="text" class="form-control" placeholder="username" name="username" style="max-width:300px;"></input>
+							</div>
+							<input type="password" class="form-control" placeholder="password" name="password" style="max-width:300px;"></input>
+						</div>
+
+						<div style="padding:20px 0 10px;">
+							<button type="submit" class="btn btn-success btn-lg btn-block" style="max-width:200px;">提交</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</main>
+{% endblock %}

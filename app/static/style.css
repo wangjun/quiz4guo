@@ -1,0 +1,13 @@
+.question-correct:after {
+    content: "✓";
+    font-size: 15px;
+    color: green;
+    padding-left: 10px;
+}
+
+.question-incorrect:after {
+    content: "✗";
+    font-size: 15px;
+    color: red;
+    padding-left: 10px;
+}
