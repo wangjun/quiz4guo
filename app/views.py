@@ -9,7 +9,7 @@ sys.setdefaultencoding('utf8')
 
 import os, json
 from flask import Flask, session, render_template, url_for, redirect, request, flash
-app.secret_key = os.urandom(24)
+app.secret_key = 'j~\x11\x87W\x00p\xcd\x0c\xa6\x89\xf5\x9ey\xd0\x06\xd9G\x10Y\xedh\xbea'
 
 yanzhengti, yztdaan = (u"你最喜欢的人是？  (这是一道验证题，为了验证你有答题的资格) ", u"王八蛋")
 
@@ -45,6 +45,9 @@ def index():
     xuanzetixuanxiang = ''
     if "current_question" not in session:
         session["current_question"] = -1
+    if "showtop" not in session:
+        session["showtop"] = 0
+        return render_template("top.html")
     if "score" not in session:
         session["score"] = 0
         session["scuccnum"] = 0
@@ -114,6 +117,7 @@ def index():
         quesnum=len(questions) if cq != -1 else u"1，微电，版图设计"
                           )
 
+'''
 @app.route('/addqc', methods=['GET', 'POST'])
 def add_questions1():
     if request.method == 'GET':
@@ -144,36 +148,6 @@ def add_questions3():
         getQuestion.addqtk(title=title, score=score, answer=answer)
         return render_template('add_tkques.html', success=True)
 
-'''
-@app.route('/', methods=['GET', 'POST'])
-@app.route('/login', methods=['GET', 'POST'])
-def login_view():
-    if request.method == 'GET':
-        return render_template("index.html")
-    elif request.method == 'POST':
-        if request.form['username']:
-            if user.login(request.form['username'], request.form['password']):
-                return user_dash_view()
-            else:
-                return render_template("index.html", error=True)
-        else:
-            return 'Fail'
-
-
-@app.route('/register', methods=['GET', 'POST'])
-def register_view():
-    if request.method == 'GET':
-        return render_template('register.html')
-    elif request.method == 'POST':
-        if request.form['password'] != request.form['password-repeat']:
-            return render_template('register.html', error='passwords are not same')
-        else:
-            if user.register(request.form['username'], request.form['password']):
-                return 'success'
-            else:
-                return render_template('register.html', error='the username has been registered')
-
-'''
 
 @app.route('/user_dash', methods=['GET', 'POST'])
 def user_dash_view():
@@ -206,3 +180,5 @@ def show_questions(id):
                 return render_template('question.html', question_title=data[0], question_content=data[1], kind=data[3], success=True)
         else:
             return render_template('question.html', question_title=data[0], question_content=data[1], kind=data[3], loginError=True)
+
+'''
