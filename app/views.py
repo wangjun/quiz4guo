@@ -9,7 +9,7 @@ sys.setdefaultencoding('utf8')
 
 import os, json
 from flask import Flask, session, render_template, url_for, redirect, request, flash
-app.secret_key = 'j~\x11\x87W\x00p\xcd\x0c\xa6\x89\xf5\x9ey\xd0\x06\xd9G\x10Y\xedh\xbea'
+app.secret_key = 'jc\x11\x87W\x00p\xcd\x0c\xa6\x89\xf5\x9ey\xd0\x06\xd9G\x10Y\xedh\xbea'
 
 yanzhengti, yztdaan = (u"你最喜欢的人是？  (这是一道验证题，为了验证你有答题的资格) ", u"王八蛋")
 
@@ -38,15 +38,19 @@ def render_success( sessionScore, failn ):
         a, b, c = '999'
     return render_template("success.html", hund=a, deca=b, unit=c, failnum=failn)
 
+@app.route('/mayforcebewithyou.html')
+def star():
+    session["showtop"] = 0
+    return redirect('/')
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
     tfs = {"xuanze":"xuanzeti.html", "panduan":"panduanti.html", "tiankong":"quiz.html"}
     update_question()
     xuanzetixuanxiang = ''
     if "current_question" not in session:
-        session["current_question"] = -1
+        session["current_question"] = 0#-1
     if "showtop" not in session:
-        session["showtop"] = 0
         return render_template("top.html")
     if "score" not in session:
         session["score"] = 0
